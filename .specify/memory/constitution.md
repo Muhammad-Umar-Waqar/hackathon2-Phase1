@@ -1,55 +1,45 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!-- SYNC IMPACT REPORT
+Version change: N/A (initial creation) → 1.0.0
+Modified principles: None (initial creation)
+Added sections: All sections (initial creation)
+Removed sections: None
+Templates requiring updates: ✅ .specify/templates/plan-template.md, ✅ .specify/templates/spec-template.md, ✅ .specify/templates/tasks-template.md
+Follow-up TODOs: None
+-->
+
+# Hackathon II Phase I Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. Spec-Driven Development
+All development begins with a clear specification that defines scope, requirements, and acceptance criteria. Implementation follows specification approval, ensuring alignment between business needs and technical execution.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. Test-First Approach (NON-NEGOTIABLE)
+Test-driven development is mandatory: specifications include test cases → tests written → tests fail → implementation follows to make tests pass. The Red-Green-Refactor cycle is strictly enforced.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. Minimal Viable Changes
+Every implementation targets the smallest viable solution that meets requirements. Refactoring unrelated code is avoided. Features are built iteratively with focus on core functionality first.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. Code Quality and Review
+All code undergoes peer review before merging. Code must be clear, maintainable, and follow established patterns. Automated checks and manual reviews ensure quality standards.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. Documentation and Traceability
+Changes are documented with clear rationale. All code modifications include comments where logic is not self-evident. Architectural decisions are recorded in ADRs when significant.
 
-### [PRINCIPLE_6_NAME]
+### VI. Dependency Management
 
+External dependencies are carefully evaluated for security, maintenance, and necessity. Unnecessary dependencies are avoided. All dependencies are tracked and kept up-to-date with security patches.
 
-[PRINCIPLE__DESCRIPTION]
+## Development Standards
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+Code follows consistent formatting and naming conventions appropriate to the language. Error handling is implemented at system boundaries with appropriate logging. Performance considerations are addressed early in design.
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+## Quality Assurance
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+All features include unit tests with appropriate coverage. Integration tests cover critical workflows. Code quality tools are integrated into the development pipeline to catch issues early.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+This constitution governs all development practices for the Hackathon II Phase I project. All team members must comply with these principles. Amendments require team discussion and consensus before implementation.
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2026-02-04 | **Last Amended**: 2026-02-04
