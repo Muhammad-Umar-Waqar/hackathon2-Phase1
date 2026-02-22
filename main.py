@@ -1,4 +1,4 @@
-"""
+ """
 Todo Application - Phase I: In-Memory Python Console Todo App
 
 A simple command-line todo application that stores tasks entirely in memory.
